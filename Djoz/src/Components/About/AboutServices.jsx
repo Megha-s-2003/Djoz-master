@@ -5,20 +5,20 @@ const services = [
   {
     id: 1,
     title: "Wedding",
-    image: "/public/img/services/as-1.jpg",
-    icon: "/public/img/services/as-icon-1.png",
+    image: "/img/services/as-1.jpg",
+    icon: "/img/services/as-icon-1.png",
   },
   {
     id: 2,
     title: "Clubs and bar",
-    image: "/public/img/services/as-2.jpg",
-    icon: "/public/img/services/as-icon-2.png",
+    image: "/img/services/as-2.jpg",
+    icon: "/img/services/as-icon-2.png",
   },
   {
     id: 3,
     title: "Corporate events",
-    image: "/public/img/services/as-3.jpg",
-    icon: "/public/img/services/as-icon-3.png",
+    image: "/img/services/as-3.jpg",
+    icon: "/img/services/as-icon-3.png",
   },
 ];
 

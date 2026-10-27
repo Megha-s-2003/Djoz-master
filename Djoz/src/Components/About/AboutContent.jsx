@@ -9,7 +9,7 @@ function AboutContent() {
           <div className="col-lg-6">
             <div className="about__pic">
               <img
-                src="/public/img/about/about.png"
+                src="/img/about/about.png"
                 alt="About DJ"
               />
             </div>
@@ -35,7 +35,7 @@ function AboutContent() {
               </p>
 
               <img
-                src="/public/img/about/signature.png"
+                src="/img/about/signature.png"
                 alt="Signature"
               />
             </div>
