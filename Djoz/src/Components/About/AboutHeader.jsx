@@ -1,99 +1,6 @@
-
-// import React from "react";
+ import React, { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
-// import "./About.css";
-
-// function AboutHeader() {
-//   return (
-//     <header className="header header--normal">
-//       <div className="container">
-//         <div className="row align-items-center">
-//           {/* Logo */}
-//           <div className="col-lg-2 col-md-2 col-4">
-//             <div className="header__logo">
-//               <Link to="/">
-//                 <img src="/img/logo.png" alt="DJoz Logo" />
-//               </Link>
-//             </div>
-//           </div>
-
-//           {/* Navigation and social icons */}
-//           <div className="col-lg-10 col-md-10 col-8">
-//             <div className="header__nav">
-//               <nav className="header__menu">
-//                 <ul>
-//                   <li>
-//                     <Link to="/">Home</Link>
-//                   </li>
-
-//                   <li className="active">
-//                     <Link to="/about">About</Link>
-//                   </li>
-
-//                   <li>
-//                     <Link to="/discography">Discography</Link>
-//                   </li>
-
-//                   <li>
-//                     <Link to="/tours">Tours</Link>
-//                   </li>
-
-//                   <li>
-//                     <Link to="/videos">Videos</Link>
-//                   </li>
-
-//                   {/* <li>
-//                     <Link to="#">Pages</Link>
-//                     <ul className="dropdown">
-//                       <li>
-//                         <Link to="/about">About</Link>
-//                       </li> */}
-//                       <li>
-//                         <Link to="/blog">Blog</Link>
-//                       </li>
-//                       {/* <li>
-//                         <Link to="/blog-details">Blog Details</Link>
-//                       </li>
-//                     </ul>
-//                   </li> */}
-
-//                   <li>
-//                     <Link to="/contact">Contact</Link>
-//                   </li>
-//                 </ul>
-//               </nav>
-
-//               <div className="header__right__social">
-//                 <a href="https://www.facebook.com/" aria-label="Facebook">
-//                   <i className="fa fa-facebook" />
-//                 </a>
-
-//                 <a href="https://twitter.com/" aria-label="Twitter">
-//                   <i className="fa fa-twitter" />
-//                 </a>
-
-//                 <a href="https://www.instagram.com/" aria-label="Instagram">
-//                   <i className="fa fa-instagram" />
-//                 </a>
-
-//                 <a href="https://dribbble.com/" aria-label="Dribbble">
-//                   <i className="fa fa-dribbble" />
-//                 </a>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
-
-// export default AboutHeader;
-
-
-
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./About.css";
 
 function AboutHeader() {
@@ -160,8 +67,32 @@ function AboutHeader() {
                 CLOSE ×
               </button>
             </div>
-
-            <nav className="about-header-menu">
+<nav className="about-header-menu">
+  <ul>
+    <li>
+      <NavLink to="/" end onClick={closeMenu}>Home</NavLink>
+    </li>
+    <li>
+      <NavLink to="/about" onClick={closeMenu}>About</NavLink>
+    </li>
+    <li>
+      <NavLink to="/discography" onClick={closeMenu}>Discography</NavLink>
+    </li>
+    <li>
+      <NavLink to="/tours" onClick={closeMenu}>Tours</NavLink>
+    </li>
+    <li>
+      <NavLink to="/videos" onClick={closeMenu}>Videos</NavLink>
+    </li>
+    <li>
+      <NavLink to="/blog" onClick={closeMenu}>Blog</NavLink>
+    </li>
+    <li>
+      <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+    </li>
+  </ul>
+</nav>
+            {/* <nav className="about-header-menu">
               <ul>
                 <li>
                   <Link to="/" onClick={closeMenu}>Home</Link>
@@ -185,7 +116,7 @@ function AboutHeader() {
                   <Link to="/contact" onClick={closeMenu}>Contact</Link>
                 </li>
               </ul>
-            </nav>
+            </nav> */}
 
             <div className="about-header-social">
               <a href="https://www.facebook.com/" aria-label="Facebook">
