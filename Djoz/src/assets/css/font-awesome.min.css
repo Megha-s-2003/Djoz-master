@@ -1,0 +1,66 @@
+
+/* Font Awesome font */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("/fonts/fontawesome-webfont.woff2") format("woff2"),
+       url("/fonts/fontawesome-webfont.woff") format("woff"),
+       url("/fonts/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* Base icon styles */
+.fa {
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Social media icons */
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+/* Navbar social links */
+.header__right__social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__right__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header__right__social a:hover {
+  color: #b68aff;
+}
+
+.header__right__social .fa {
+  font-size: 16px;
+}
