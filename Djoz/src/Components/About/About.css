@@ -62,16 +62,87 @@
    GALLERY
 ========================= */
 
+/* About Gallery */
 .about-gallery {
-  padding: 50px 0;
-}
-
-.about-gallery img {
   width: 100%;
-  height: auto;
-  display: block;
+  padding: 35px 0;
 }
 
+.about-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+.about-gallery-item {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.about-gallery-item img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Desktop gallery arrangement */
+.gallery-item-2 {
+  grid-row: span 2;
+}
+
+.gallery-item-5 {
+  grid-row: span 2;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .about-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-gallery-item img {
+    height: 260px;
+  }
+}
+
+/* Mobile gallery: match the original template */
+@media screen and (max-width: 575px) {
+  .about-gallery {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+  }
+
+  .about-gallery .about-gallery-grid {
+    display: flex !important;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .about-gallery .about-gallery-item {
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+    grid-row: auto;
+    grid-column: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .about-gallery .about-gallery-item img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
 /* =========================
    SERVICES
 ========================= */

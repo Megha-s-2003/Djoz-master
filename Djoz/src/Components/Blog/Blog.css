@@ -55,7 +55,7 @@
   padding-top: 90px;
 }
 
-.blog  h2 {
+.blog .section-title h2 {
   position: relative;
   z-index: 2;
   font-size: 52px;
@@ -675,11 +675,10 @@
     height: 240px;
   }
 
- .blog__item__text h5 {
-  font-size: 22px;
-  line-height: 30px;
-  min-height: auto;
-}
+  .blog__item__text h5 {
+    font-size: 22px;
+    min-height: auto;
+  }
 
   .recent__item__pic {
     width: 110px;
